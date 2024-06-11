@@ -11,10 +11,6 @@ app.get("/", (req, res) => {
   res.send("¡Primer endpoint del PFB!");
 });
 
-app.get("/login", (req, res) => {
-  res.status(201).send("Login");
-});
-
 app.use((req, res) => {
   res.status(404).send("Ruta no encontrada");
 });
